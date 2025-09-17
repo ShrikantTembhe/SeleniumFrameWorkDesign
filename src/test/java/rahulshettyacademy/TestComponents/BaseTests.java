@@ -122,6 +122,8 @@ public class BaseTests {
 	@BeforeMethod(alwaysRun = true)
 	public LandingPage launchApplication() throws IOException {
 
+		System.out.println("Launching the application in base class.");
+
 		driver = initializeDriver();
 		// Use landing page code object here to call the url.
 		landingpage = new LandingPage(driver);
