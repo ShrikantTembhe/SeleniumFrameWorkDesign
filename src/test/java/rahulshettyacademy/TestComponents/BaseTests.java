@@ -137,6 +137,8 @@ public class BaseTests {
 	// due to grouping the method got ignored by testNG so used(alwaysRun = true)
 	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
+
+		 System.out.println("Closed The Browser.");
 		// Closing the browser.
 		driver.quit();
 	}
